@@ -1,0 +1,23 @@
+{
+    "name": "figma_project_08",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "sass scss:assets/css -w",
+        "minify": "sass scss:assets/css -s compressed"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/albatka123/Mart-Website-Project.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs",
+    "bugs": {
+        "url": "https://github.com/albatka123/Mart-Website-Project/issues"
+    },
+    "homepage": "https://github.com/albatka123/Mart-Website-Project#readme"
+}
