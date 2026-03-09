@@ -146,11 +146,30 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Montserrat", sans-serif;
+  color: var(--text-color);
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+  color: inherit;
+}
+
+.icon {
+  filter: var(--icon-color);
 }
 
 .row > *, .container-fluid, .container {
@@ -1184,13 +1203,37 @@ a {
     --grid-gutter-y: 90px;
   }
 }
+html.dark {
+  --text-color: #fff;
+  --icon-color: brightness(0) saturate(100%) invert(100%) sepia(1%)
+      saturate(7495%) hue-rotate(340deg) brightness(104%) contrast(85%);
+  --top-act-group-bg-color: #292e39;
+  --header-bg-color: #171c28;
+  --top-act-group-shadow: rgba(0, 0, 0, 0.2);
+  --top-act-group-separate: #ededf6;
+}
+
+:root {
+  --text-color: #1a162e;
+  --icon-color: brightness(0) saturate(100%) invert(7%) sepia(16%)
+      saturate(2894%) hue-rotate(214deg) brightness(101%) contrast(95%);
+  --header-bg-color: #eee;
+  --top-act-group-bg-color: #fff;
+  --top-act-group-shadow: rgba(237, 237, 246, 0.2);
+  --top-act-group-separate: #ededf6;
+}
+
+.top-act__btn, .top-act__group, .top-act, .navbar__link, .navbar__list, .top-bar {
+  display: flex;
+  align-items: center;
+}
+
 .header {
-  background: #eee;
+  background: var(--header-bg-color);
 }
 
 .top-bar {
-  display: flex;
-  align-items: center;
+  padding: 30px 0;
 }
 
 .navbar {
@@ -1198,14 +1241,10 @@ a {
   margin-right: auto;
 }
 .navbar__list {
-  display: flex;
-  align-items: center;
   gap: 30px;
 }
 .navbar__link {
-  display: flex;
   gap: 6px;
-  align-items: center;
   font-size: 15px;
   font-weight: 500;
   line-height: 146.667%; /* 146.667% */
@@ -1215,8 +1254,39 @@ a {
 }
 
 .top-act {
-  display: flex;
-  align-items: center;
+  gap: 20px;
+}
+.top-act__group {
+  min-width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  background: var(--top-act-group-bg-color);
+  box-shadow: 0 20px 60px 10px var(--top-act-group-shadow);
+}
+.top-act__group--single .top-act__btn {
+  padding: 13px;
+}
+.top-act__btn {
+  gap: 10px;
+  padding: 13px 20px;
+  cursor: pointer;
+}
+.top-act__title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 146.667%;
+}
+.top-act__separate {
+  width: 1px;
+  height: 30px;
+  background: var(--top-act-group-separate);
+}
+.top-act__avatar {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 .logo {
