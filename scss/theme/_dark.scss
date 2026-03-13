@@ -1,8 +1,8 @@
 @use "../abstracts";
 html.dark {
     --text-color: #fff;
-    --icon-color: brightness(0) saturate(100%) invert(100%) sepia(1%)
-        saturate(7495%) hue-rotate(340deg) brightness(104%) contrast(85%);
+    --icon-color: brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(7495%) hue-rotate(340deg)
+        brightness(104%) contrast(85%);
     --top-act-group-bg-color: #292e39;
     --body-bg: #292e39;
     --header-bg-color: #171c28;
@@ -15,10 +15,13 @@ html.dark {
     // Dropdown
     --dropdown-bg-color: #2f3441;
     --dropdown-shadow: rgba(23, 28, 40, 0.4);
-    --dropdown-arrow-color: brightness(0) saturate(100%) invert(18%) sepia(4%)
-        saturate(2587%) hue-rotate(186deg) brightness(98%) contrast(93%);
+    --dropdown-arrow-color: brightness(0) saturate(100%) invert(18%) sepia(4%) saturate(2587%) hue-rotate(186deg)
+        brightness(98%) contrast(93%);
     --top-menu-border-color: #171c28;
-    --menu-column-icon-color: brightness(0) saturate(100%) invert(100%)
-        sepia(6%) saturate(161%) hue-rotate(307deg) brightness(116%)
-        contrast(95%);
+    --menu-column-icon-color: brightness(0) saturate(100%) invert(100%) sepia(6%) saturate(161%) hue-rotate(307deg)
+        brightness(116%) contrast(95%);
+
+    //Sidebar
+    --sidebar-bg: #292e39;
+    --sidebar-shadow: rgba(23, 28, 40, 0.4);
 }
